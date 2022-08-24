@@ -21,8 +21,8 @@ int func(int argc, char *argv[]){
                     }
                     else if(spsPwr.BatteryLifePercent >= 85)
                     {   
-                        MessageBoxA(NULL, "#  C H A R G E D : \nCharged upto 85% \nUnplug the charger to AVOID  H E A T I N G ! ! ", " #  C H A R G E D .  .  .  ", MB_OK | MB_ICONINFORMATION);    
                         playSound();
+                        MessageBoxA(NULL, "#  C H A R G E D : \nCharged upto 85% \nUnplug the charger to AVOID  H E A T I N G ! ! ", " #  C H A R G E D .  .  .  ", MB_OK | MB_ICONINFORMATION);    
                         // cout<<"\n Laptop is charging";
                         return 0;
                     }
@@ -79,7 +79,7 @@ void playSound(){
     Sleep(100);
     Beep(700,800);
     Sleep(100);
-    Beep(700,800);
+   
     Sleep(100);
     //Very Fast
     Beep(0,1000);
