@@ -1,3 +1,6 @@
+
+/* ADD TIME ELAPSED FUNCTIONALITY */
+
 #include <iostream>
 #include <bits/stdc++.h>
 #include <windows.h> 
@@ -19,12 +22,14 @@ int func(int argc, char *argv[]){
                         Sleep(30*60000); // 30 Minutes
                         return 1;
                     }
-                    else if(spsPwr.BatteryLifePercent >= 85)
+                    else if(spsPwr.BatteryLifePercent >= 86)
                     {   
                         playSound();
                         MessageBoxA(NULL, "#  C H A R G E D : \nCharged upto 85% \nUnplug the charger to AVOID  H E A T I N G ! ! ", " #  C H A R G E D .  .  .  ", MB_OK | MB_ICONINFORMATION);    
                         // cout<<"\n Laptop is charging";
-                        return 0;
+                        // return 0;
+                        Sleep(2*60*60000);
+                        return 1;
                     }
                     else
                     {
