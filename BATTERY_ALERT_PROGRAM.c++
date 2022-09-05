@@ -1,6 +1,6 @@
 
 /* ADD TIME ELAPSED FUNCTIONALITY */
-/* add real percentage of battery in charged message */
+/* add real percentage of battery in charged message  --->DONE<--- */
 
 #include <iostream>
 #include <bits/stdc++.h>
@@ -14,13 +14,13 @@ int func(int argc, char *argv[], int f,int l){
 
                 if(f)
                 {
-                    cout<<"\n            #  C H A R G E D : Charged upto 85% Unplug the charger to AVOID  H E A T I N G ! ! \n";    
+                    cout<<"\n            #  C H A R G E D : Charged upto"<<spsPwr.BatteryLifePercent<<"% Unplug the charger to AVOID  H E A T I N G ! ! \n";    
                     cout<<" \n N O W   P R O G R A M M   I S   G O I N G   T O   S L E E P   F O R   :  2 H R S   D O N T ' T   P A N I C  :) \n ";
                     return 0;    
                 }
                 else if(l)
                 {
-                    cout<<"\n            #  D I S C H A R G E D : Battery Below 55% Plug the Charger for good battery Health \n";    
+                    cout<<"\n            #  D I S C H A R G E D : Battery Below "<<spsPwr.BatteryLifePercent+1<<" % Plug the Charger for good battery Health \n";    
                     cout<<" \n N O W   P R O G R A M M   I S   G O I N G   T O   S L E E P   F O R   :  30 M I N U T E S   D O N T ' T   P A N I C  :) \n ";    
                     return 0;
                 }
