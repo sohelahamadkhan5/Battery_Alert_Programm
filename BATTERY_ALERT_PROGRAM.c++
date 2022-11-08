@@ -64,7 +64,7 @@ int func(int argc, char *argv[], int f,int l){
 
 int main(int argc, char *argv[])
 {
-    cout<<"                                         I B A D A H  G R O U P .Pvt .Ltd\n"<<endl<<endl<<endl;      
+    cout<<"                                         Z I K R  G R O U P .Pvt .Ltd\n"<<endl<<endl<<endl;      
     int n =1;
     while(n)
     {
