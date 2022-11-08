@@ -14,7 +14,7 @@ int func(int argc, char *argv[], int f,int l){
 
                 if(f)
                 {
-                    cout<<"\n            #  C H A R G E D : Charged upto"<<spsPwr.BatteryLifePercent<<"% Unplug the charger to AVOID  H E A T I N G ! ! \n";    
+                    cout<<"\n            #  C H A R G E D : Charged upto "<< spsPwr.BatteryLifePercent+0 <<" % Unplug the charger to AVOID  H E A T I N G ! ! \n";    
                     cout<<" \n N O W   P R O G R A M M   I S   G O I N G   T O   S L E E P   F O R   :  2 H R S   D O N T ' T   P A N I C  :) \n ";
                     return 0;    
                 }
@@ -45,7 +45,7 @@ int func(int argc, char *argv[], int f,int l){
                         Sleep(30*60000); // 30 Minutes
                         return 1;
                     }
-                    else if(spsPwr.BatteryLifePercent > 85) //85
+                    else if(spsPwr.BatteryLifePercent >= 83) //83
                     {   
                         playSound();
                         // MessageBoxA(NULL, "#  C H A R G E D : \nCharged upto 85% \nUnplug the charger to AVOID  H E A T I N G ! ! ", " #  C H A R G E D .  .  .  ", MB_OK | MB_ICONINFORMATION);    
@@ -87,23 +87,10 @@ void playSound(){
     Sleep(100);
     Beep(700,800);
     Sleep(100);
-    Beep(700,800);
-    Sleep(100);
-    //
-    Beep(700,800);
-    Sleep(100);
-    Beep(700,800);
-    Sleep(100);
-    Beep(700,800);
-    Sleep(100);
-    //
-    Beep(700,800);
-    Sleep(100);
-    Beep(700,800);
-    Sleep(100);
+    
+    //[---->   Break in the sound(commented some Beep() in playSound() <---]
    
-    Sleep(100);
-
+   
     /*
 
         //Very Fast
